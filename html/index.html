@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ナガクラ | TOP</title>
+  <meta name="description" content="企業のプロモーション、イベント記念品、推し活グッズに。缶×植物の育つノベルティ。ナガクラのサービス紹介ページ。" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#" aria-label="ナガクラ トップへ">
+        <img class="brand__logo" src="./img/logo.svg" alt="nagakura" />
+      </a>
+
+      <nav class="nav" aria-label="グローバルナビゲーション">
+        <a class="nav__link" href="./about.html">ナガクラについて</a>
+
+        <!-- 追記: PCヘッダー サービス（メガメニューのトリガー） -->
+        <button class="nav__link nav__trigger nav__link--with-icon" type="button" aria-haspopup="true"
+          aria-expanded="false" aria-controls="mega-services" data-mega-trigger="services">
+          <span>サービス</span>
+        </button>
+
+        <a class="nav__link" href="topics.html">トピックス</a>
+        <a class="btn btn--primary nav__cta" href="contact.html">お問い合わせ・見積依頼</a>
+        <a class="btn btn--primary-dl nav__cta" href="./download/2026catalog.pdf" target="_blank" rel="noopener">カタログ ダウンロード</a>
+      </nav>
+
+      <!-- 追記: スマホ用ハンバーガー -->
+      <button class="header-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobile-nav"
+        data-mobile-trigger>
+        <span class="header-toggle__icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <!-- 追記: PCヘッダー メガメニュー（サービス） -->
+    <div class="mega" id="mega-services" aria-label="サービスメガメニュー" data-mega="services">
+      <div class="container">
+        <div class="mega__panel" role="presentation">
+          <nav class="mega__nav" aria-label="サービス">
+            <ul class="mega__list">
+              <li class="mega__item">
+                <a class="mega__link" href="collection.html">
+                  <span class="mega__label">缶屋さんのオリジナル缶コレクション</span>
+                  <span class="mega__thumb">
+                    <img src="./img/navi-service1.png" alt="" loading="lazy" />
+                  </span>
+                </a>
+              </li>
+              <li class="mega__item">
+                <a class="mega__link" href="fan-goods.html">
+                  <span class="mega__label">缶屋さんの押し活グッズ</span>
+                  <span class="mega__thumb">
+                    <img src="./img/navi-service2.png" alt="" loading="lazy" />
+                  </span>
+                </a>
+              </li>
+              <li class="mega__item">
+                <a class="mega__link" href="green.html">
+                  <span class="mega__label">缶屋さんの花と緑のノベルティ</span>
+                  <span class="mega__thumb">
+                    <img src="./img/navi-service3.png" alt="" loading="lazy" />
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 追記: スマホ用スライドメニュー -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true" data-mobile-nav>
+    <div class="mobile-nav__backdrop" data-mobile-close aria-hidden="true"></div>
+    <div class="mobile-nav__panel" role="dialog" aria-modal="true" aria-label="メニュー">
+      <div class="mobile-nav__head">
+        <span class="mobile-nav__title">メニュー</span>
+        <button class="mobile-nav__close" type="button" aria-label="メニューを閉じる" data-mobile-close>×</button>
+      </div>
+
+      <nav class="mobile-nav__body" aria-label="モバイルナビゲーション">
+        <ul class="mobile-nav__list">
+          <li><a class="mobile-nav__link" href="#" data-mobile-link>トップページ</a></li>
+          <li><a class="mobile-nav__link" href="about.html" data-mobile-link>ナガクラについて</a></li>
+
+          <li class="mobile-nav__item">
+            <button class="mobile-nav__accordion" type="button" aria-expanded="false" aria-controls="mobile-services"
+              data-accordion-trigger>
+              <span>サービス</span>
+              <span class="mobile-nav__chev" aria-hidden="true"></span>
+            </button>
+            <div class="mobile-nav__submenu" id="mobile-services" data-accordion-panel>
+              <a class="mobile-nav__sublink" href="collection.html" data-mobile-link>缶屋さんのオリジナル缶コレクション</a>
+              <a class="mobile-nav__sublink" href="fan-goods.html" data-mobile-link>缶屋さんの押し活グッズ</a>
+              <a class="mobile-nav__sublink" href="green.html" data-mobile-link>缶屋さんの花と緑のノベルティ</a>
+            </div>
+          </li>
+
+          <li><a class="mobile-nav__link" href="topics.html" data-mobile-link>トピックス</a></li>
+          <li><a class="mobile-nav__link mobile-nav__link--cta" href="contact.html" data-mobile-link>お問い合わせ</a></li>
+          <li><a class="mobile-nav__link mobile-nav__link--cta" href="./download/2026catalog.pdf" target="_blank" rel="noopener" data-mobile-link>カタログ ダウンロード</a></li>
+        </ul>
+
+        <div class="mobile-nav__sns" aria-label="SNS">
+          <a class="mobile-nav__snslink" href="#contact" aria-label="Instagram">
+            <img src="./img/instagram.png" alt="" />
+          </a>
+          <a class="mobile-nav__snslink" href="#contact" aria-label="Facebook">
+            <img src="./img/facebook.png" alt="" />
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+          <h1 class="hero__title" id="hero-title">
+            <picture>
+              <source media="(width > 600px)" srcset="./img/mv_pc.png">
+            <img src="./img/mv_sp.png" alt="株式会社ナガクラは、<br>缶の可能性を広げ、<br>価値をかたちにするモノづくり企業です。">
+            </picture>
+          </h1>
+        <div style="--swiper-navigation-color: #000; --swiper-pagination-color: #000" class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture>
+                <source media="(width < 500px)"
+                srcset="./img/main-1sp.png" width="458" height="836">
+              <img src="./img/main-1.png" width="1600" height="900" />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source media="(width < 500px)"
+                srcset="./img/main-2sp.png" width="458" height="836">
+              <img src="./img/main-2.png" width="1600" height="900" />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source media="(width < 500px)"
+                srcset="./img/main-3sp.png" width="458" height="836">
+              <img src="./img/main-3.png" width="1600" height="900" />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source media="(width < 500px)"
+                srcset="./img/main-1sp.png" width="458" height="836">
+              <img src="./img/main-1.png" width="1600" height="900" />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source media="(width < 500px)"
+                srcset="./img/main-2sp.png" width="458" height="836">
+              <img src="./img/main-2.png" width="1600" height="900" />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source media="(width < 500px)"
+                srcset="./img/main-3sp.png" width="458" height="836">
+              <img src="./img/main-3.png" width="1600" height="900" />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="service" aria-labelledby="service-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="section__title" id="service-title">サービス紹介</h2>
+          <p class="section__subtitle">オリジナル缶づくりをトータルサポート。用途に合わせたサービスをご用意しています。</p>
+        </header>
+
+        <div class="cards-3" role="list">
+          <article class="service-card service-card--pink" role="listitem">
+            <div class="service-card__head">
+              <h3 class="service-card__title">缶屋さんの<br>オリジナル缶コレクション</h3>
+              <div class="service-card__icon" aria-hidden="true">
+                <img src="./img/icon-service3.png" alt="" />
+              </div>
+            </div>
+            <p class="service-card__desc">小ロットから対応可能なオリジナル缶。印刷から製作まで一貫して承ります。</p>
+            <a class="service-card__more" href="service3.html">
+              <span>詳しく見る</span>
+            </a>
+          </article>
+
+          <article class="service-card service-card--oshikatsu" role="listitem">
+            <div class="service-card__head">
+              <h3 class="service-card__title">缶屋さんの<br>押し活グッズ</h3>
+              <div class="service-card__icon" aria-hidden="true">
+                <img src="./img/icon-service2.png" alt="" />
+              </div>
+            </div>
+            <p class="service-card__desc">推し活をもっと楽しくするオリジナルグッズ。小ロット対応で、想いを形にします。</p>
+            <a class="service-card__more" href="service2.html">
+              <span>詳しく見る</span>
+            </a>
+          </article>
+          <article class="service-card service-card--green" role="listitem">
+            <div class="service-card__head">
+              <h3 class="service-card__title">缶屋さんの<br>花と緑のノベルティ</h3>
+              <div class="service-card__icon" aria-hidden="true">
+                <img src="./img/icon/icon-service1.png" alt="" />
+              </div>
+            </div>
+            <p class="service-card__desc">缶と植物を組み合わせた、育つノベルティ。受け取った人が育てる喜びを感じられる、唯一無二のギフトです。</p>
+            <a class="service-card__more" href="service1.html">
+              <span>詳しく見る</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section feature" aria-labelledby="feature-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="section__title" id="feature-title">ナガクラだからできること</h2>
+          <p class="section__subtitle">企画から製造まで、一貫対応のものづくり</p>
+        </header>
+
+        <div class="feature-grid" role="list">
+          <article class="feature-card" role="listitem">
+            <div class="feature-card__badge" aria-hidden="true">
+              <img src="./img/icon/icon-check.png" alt="" />
+            </div>
+            <h3 class="feature-card__title">様々な商品アイテム</h3>
+            <p class="feature-card__desc">缶×植物という組み合わせで、受け取った人が「育てる喜び」を感じられる、記憶に残るノベルティです。</p>
+          </article>
+
+          <article class="feature-card" role="listitem">
+            <div class="feature-card__badge" aria-hidden="true">
+              <img src="./img/icon/icon-check.png" alt="" />
+            </div>
+            <h3 class="feature-card__title">小ロット対応</h3>
+            <p class="feature-card__desc">50個から製造可能。小規模イベントやファンクラブグッズでも気軽にご利用いただけます。</p>
+          </article>
+
+          <article class="feature-card" role="listitem">
+            <div class="feature-card__badge" aria-hidden="true">
+              <img src="./img/icon/icon-check.png" alt="" />
+            </div>
+            <h3 class="feature-card__title">一貫対応</h3>
+            <p class="feature-card__desc">デザイン提案から印刷、植物の選定、梱包まで一貫してサポート。手間なくオリジナルグッズを実現します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="products-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="section__title" id="products-title">新商品</h2>
+          <p class="section__subtitle">様々なシーンでご活用いただいています</p>
+        </header>
+
+        <div class="product-grid" role="list">
+          <article class="product-card" role="listitem">
+            <div class="product-card__media">
+              <img src="./img/about3.png" alt="" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <span class="pill">イベント</span>
+              <h3 class="product-card__title">イベント記念品として</h3>
+              <p class="product-card__desc">企業周年記念で多肉植物×缶のセットを配布。参加者から高評価をいただきました。</p>
+            </div>
+          </article>
+
+          <article class="product-card" role="listitem">
+            <div class="product-card__media">
+              <img src="./img/about2.png" alt="" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <span class="pill">推し活</span>
+              <h3 class="product-card__title">アイドルグッズとして</h3>
+              <p class="product-card__desc">ファンクラブ限定の推し活缶グッズ。小ロット50個から対応し、完売しました。</p>
+            </div>
+          </article>
+
+          <article class="product-card" role="listitem">
+            <div class="product-card__media">
+              <img src="./img/about4.png" alt="" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <span class="pill">販促</span>
+              <h3 class="product-card__title">販促キャンペーン</h3>
+              <p class="product-card__desc">新商品プロモーションでブランドロゴ入り缶×ハーブのセット。SNSで話題に。</p>
+            </div>
+          </article>
+        </div>
+         <div class="product-grid" role="list">
+          <article class="product-card" role="listitem">
+            <div class="product-card__media">
+              <img src="./img/about3.png" alt="" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <span class="pill">イベント</span>
+              <h3 class="product-card__title">イベント記念品として</h3>
+              <p class="product-card__desc">企業周年記念で多肉植物×缶のセットを配布。参加者から高評価をいただきました。</p>
+            </div>
+          </article>
+
+          <article class="product-card" role="listitem">
+            <div class="product-card__media">
+              <img src="./img/about2.png" alt="" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <span class="pill">推し活</span>
+              <h3 class="product-card__title">アイドルグッズとして</h3>
+              <p class="product-card__desc">ファンクラブ限定の推し活缶グッズ。小ロット50個から対応し、完売しました。</p>
+            </div>
+          </article>
+
+          <article class="product-card" role="listitem">
+            <div class="product-card__media">
+              <img src="./img/about4.png" alt="" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <span class="pill">販促</span>
+              <h3 class="product-card__title">販促キャンペーン</h3>
+              <p class="product-card__desc">新商品プロモーションでブランドロゴ入り缶×ハーブのセット。SNSで話題に。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="topics" aria-labelledby="topics-title">
+      <div class="container">
+        <header class="topics__head">
+          <div class="topics__titlewrap">
+            <h2 class="section__title" id="topics-title">トピックス</h2>
+            <p class="section__subtitle">最新のお知らせ</p>
+          </div>
+          <!-- <a class="topics__linkall" href="topics.html">
+            <span>すべて見る</span>
+          </a> -->
+        </header>
+
+        <div class="topics-list" role="list">
+          <article class="topics-item" role="listitem">
+            <a href="">
+              <div class="topics-item__left">
+                <time class="topics-item__date" datetime="2026-03-15">2026.03.15</time>
+                <span class="topics-item__cat">製品情報</span>
+                <span class="topics-item__title">春の新商品ラインナップを公開しました</span>
+              </div>
+              <span class="topics-item__arrow" aria-hidden="true">
+              </span>
+            </a>
+          </article>
+
+          <article class="topics-item" role="listitem">
+            <a href="">
+              <div class="topics-item__left">
+                <time class="topics-item__date" datetime="2026-03-15">2026.03.15</time>
+                <span class="topics-item__cat">製品情報</span>
+                <span class="topics-item__title">春の新商品ラインナップを公開しました</span>
+              </div>
+              <span class="topics-item__arrow" aria-hidden="true">
+              </span>
+            </a>
+          </article>
+
+          <article class="topics-item" role="listitem">
+            <a href="">
+              <div class="topics-item__left">
+                <time class="topics-item__date" datetime="2026-03-15">2026.03.15</time>
+                <span class="topics-item__cat">製品情報</span>
+                <span class="topics-item__title">春の新商品ラインナップを公開しました</span>
+              </div>
+              <span class="topics-item__arrow" aria-hidden="true">
+              </span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact" aria-labelledby="cta-title">
+      <div class="cta__bk" aria-hidden="true">
+        <img src="./img/cta-bk.svg" alt="" />
+      </div>
+
+      <div class="container cta__grid">
+        <div class="cta__left">
+          <h2 id="cta-title">まずはお気軽にご相談ください</h2>
+          <p>
+            小ロット対応、デザインから製造まで一貫サポート。<br />
+            お見積りは無料です。カタログダウンロードもご用意しています。
+          </p>
+          <div class="cta__btnrow">
+            <a class="btn btn--light" href="#contact">
+              <span>お問い合わせ・見積依頼</span>
+              <img class="btn__icon" src="./img/icon-black-arrow.png" alt="" aria-hidden="true" />
+            </a>
+           <a class="btn btn--dark" href="./download/2026catalog.pdf" target="_blank" rel="noopener">
+    <span>カタログ ダウンロード</span>
+    <img class="btn__icon" src="./img/icon-white-arrow.png" alt="" aria-hidden="true">
+</a>
+          </div>
+        </div>
+
+        <aside class="cta__right" aria-label="公式ストア">
+          <p>公式ストアから安心してお買い求めいただけます</p>
+          <div>
+            <a class="store-btn store-btn--base" href="#contact">
+              <span>安心のBASE公式ストア</span>
+              <span class="store-btn__badge" aria-hidden="true">
+                <img src="./img/base.png" alt="安心のBASE公式ストア" />
+              </span>
+            </a>
+          </div>
+          <div>
+            <a class="store-btn store-btn--yahoo" href="#contact">
+              <span>Yahoo!ショッピングでお得に</span>
+              <span class="store-btn__badge store-btn__badge--square" aria-hidden="true">
+                <img src="./img/yahoo.png" alt="Yahoo!ショッピングでお得に" />
+              </span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="フッター">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="./img/logo-wh.png" alt="nagakura" />
+          <p>缶×植物の、育つノベルティ。<br />小ロット対応・一貫サポート。</p>
+        </div>
+
+        <div class="footer__cols">
+          <nav class="footer__col" aria-label="サービス">
+            <h3>サービス</h3>
+           <ul class="footer__links">
+             <li><a href="collection.html">缶屋さんのオリジナル缶コレクション</a></li>
+              <li><a href="fan-goods.html">缶屋さんの押し活グッズ</a></li>
+              <li><a href="green.html">缶屋さんの花と緑のノベルティ</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer__col" aria-label="企業情報">
+            <h3>企業情報</h3>
+            <ul class="footer__links">
+              <li><a href="about.html">会社案内</a></li>
+              <li><a href="topics.html">トピックス</a></li>
+            </ul>
+          </nav>
+          <div class="footer__sns" aria-label="SNS">
+            <a href="https://www.instagram.com/?hl=ja" aria-label="Instagram">
+              <img src="./img/instagram.png" alt="" />
+            </a>
+            <a href="https://www.facebook.com/nagakura.co/" aria-label="Facebook">
+              <img src="./img/facebook.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">© 2026 Nagakura co.,ltd All rights reserved.</div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="./script.js" defer></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      centeredSlides: true, // 1枚目のスライドを中央にする
+      loop: true, // ループさせる
+      speed: 2000, // 少しゆっくり(デフォルトは300)
+      slidesPerView: 1.5, // スライドの表示枚数
+      spaceBetween: 15,
+      autoplay: { // 自動再生
+        delay: 3000, // 3秒後に次のスライド
+        disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
+      },
+      // ページネーション
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // 前後の矢印
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>

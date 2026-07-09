@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ナガクラ | Contact</title>
+  <meta name="description" content="企業のプロモーション、イベント記念品、推し活グッズに。缶×植物の育つノベルティ。ナガクラのサービス紹介ページ。" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/contact.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="ナガクラ トップへ">
+        <img class="brand__logo" src="./img/logo.svg"
+          alt="nagakura" />
+      </a>
+
+      <nav class="nav" aria-label="グローバルナビゲーション">
+        <a class="nav__link" href="about.html">ナガクラについて</a>
+
+        <!-- 追記: PCヘッダー サービス（メガメニューのトリガー） -->
+        <button class="nav__link nav__trigger nav__link--with-icon" type="button" aria-haspopup="true"
+          aria-expanded="false" aria-controls="mega-services" data-mega-trigger="services">
+          <span>サービス</span>
+        </button>
+
+        <a class="nav__link" href="topics.html">トピックス</a>
+        <a class="btn btn--primary nav__cta" href="contact.html">お問い合わせ・見積依頼</a>
+      </nav>
+
+      <!-- 追記: スマホ用ハンバーガー -->
+      <button class="header-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobile-nav"
+        data-mobile-trigger>
+        <span class="header-toggle__icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <!-- 追記: PCヘッダー メガメニュー（サービス） -->
+    <div class="mega" id="mega-services" aria-label="サービスメガメニュー" data-mega="services">
+      <div class="container">
+        <div class="mega__panel" role="presentation">
+          <nav class="mega__nav" aria-label="サービス">
+           <ul class="mega__list">
+              <li class="mega__item">
+                <a class="mega__link" href="collection.html">
+                  <span class="mega__label">缶屋さんのオリジナル缶コレクション</span>
+                  <span class="mega__thumb">
+                    <img src="./img/navi-service1.png" alt="" loading="lazy" />
+                  </span>
+                </a>
+              </li>
+              <li class="mega__item">
+                <a class="mega__link" href="fan-goods.html">
+                  <span class="mega__label">缶屋さんの押し活グッズ</span>
+                  <span class="mega__thumb">
+                    <img src="./img/navi-service2.png" alt="" loading="lazy" />
+                  </span>
+                </a>
+              </li>
+              <li class="mega__item">
+                <a class="mega__link" href="green.html">
+                  <span class="mega__label">缶屋さんの花と緑のノベルティ</span>
+                  <span class="mega__thumb">
+                    <img src="./img/navi-service3.png" alt="" loading="lazy" />
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 追記: スマホ用スライドメニュー -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true" data-mobile-nav>
+    <div class="mobile-nav__backdrop" data-mobile-close aria-hidden="true"></div>
+    <div class="mobile-nav__panel" role="dialog" aria-modal="true" aria-label="メニュー">
+      <div class="mobile-nav__head">
+        <span class="mobile-nav__title">メニュー</span>
+        <button class="mobile-nav__close" type="button" aria-label="メニューを閉じる" data-mobile-close>×</button>
+      </div>
+
+      <nav class="mobile-nav__body" aria-label="モバイルナビゲーション">
+        <ul class="mobile-nav__list">
+          <li><a class="mobile-nav__link" href="index.html" data-mobile-link>トップページ</a></li>
+          <li><a class="mobile-nav__link" href="about.html" data-mobile-link>ナガクラについて</a></li>
+
+          <li class="mobile-nav__item">
+            <button class="mobile-nav__accordion" type="button" aria-expanded="false" aria-controls="mobile-services"
+              data-accordion-trigger>
+              <span>サービス</span>
+              <span class="mobile-nav__chev" aria-hidden="true"></span>
+            </button>
+            <div class="mobile-nav__submenu" id="mobile-services" data-accordion-panel>
+              <a class="mobile-nav__sublink" href="collection.html" data-mobile-link>缶屋さんのオリジナル缶コレクション</a>
+              <a class="mobile-nav__sublink" href="fan-goods.html" data-mobile-link>缶屋さんの押し活グッズ</a>
+              <a class="mobile-nav__sublink" href="green.html" data-mobile-link>缶屋さんの花と緑のノベルティ</a>
+            </div>
+          </li>
+
+          <li><a class="mobile-nav__link" href="topics.html" data-mobile-link>トピックス</a></li>
+          <li><a class="mobile-nav__link mobile-nav__link--cta" href="contact.html" data-mobile-link>お問い合わせ</a></li>
+        </ul>
+
+        <div class="mobile-nav__sns" aria-label="SNS">
+          <a class="mobile-nav__snslink" href="#contact" aria-label="Instagram">
+            <img src="https://www.figma.com/api/mcp/asset/4923b7f5-b44c-4b23-a498-1b1851c1b3cb" alt="" />
+          </a>
+          <a class="mobile-nav__snslink" href="#contact" aria-label="Facebook">
+            <img src="https://www.figma.com/api/mcp/asset/21d62a51-287e-4d2b-8db2-56bd56360d95" alt="" />
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <main class="page">
+    <section class="section" id="contact" aria-labelledby="page-title">
+      <header class="page__head">
+        <h1 class="section__title" id="page-title">お問い合わせ</h1>
+        <p class="section__subtitle">サービスに関するご質問、お見積りのご依頼など、<br>お気軽にお問い合わせください。</p>
+      </header>
+      <div class="container">
+        <!-- <div class="contact-cards">
+          <div class="contact-card _tel">
+            <div class="contact-card__badge" aria-hidden="true">
+              <img src="https://www.figma.com/api/mcp/asset/258ac6dd-f37d-4ee4-a29b-60061c81e7e5" alt="" />
+            </div>
+            <div class="contact-card__text">
+              <h2>お電話でのお問い合わせ</h2>
+              <a href="">03-1234-5678</a>
+              <p>平日 9:00〜18:00</p>
+            </div>
+          </div>
+          <div class="contact-card _email">
+            <div class="contact-card__badge" aria-hidden="true">
+              <img src="https://www.figma.com/api/mcp/asset/258ac6dd-f37d-4ee4-a29b-60061c81e7e5" alt="" />
+            </div>
+            <div class="contact-card__text">
+              <h2>メールでのお問い合わせ</h2>
+              <a href="">info@kan-plants.jp</a>
+              <p>24時間受付</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card__badge" aria-hidden="true">
+              <img src="https://www.figma.com/api/mcp/asset/258ac6dd-f37d-4ee4-a29b-60061c81e7e5" alt="" />
+            </div>
+            <div class="contact-card__text">
+              <h2>所在地</h2>
+              <p>〒150-0001<br>東京都渋谷区神宮前1-2-3<br>グリーンビル5F</p>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="form">
+          <div class="form__inner">
+            <hgroup class="section__head">
+              <h2 class="section__title">お問い合わせフォーム</h2>
+              <p class="section__subtitle">下記のフォームに必要事項をご記入の上、送信してください。</p>
+              <p class="required-text"><span class="required-badge">*</span> は必須項目です。</p>
+            </hgroup>
+            <div class="form__item">
+              <div class="form__label">
+                <label for="">会社名 / 団体名</label>
+              </div>
+              <div class="form__input">
+                <input type="text" placeholder="株式会社〇〇">
+              </div>
+            </div>
+            <div class="form__item">
+              <div class="form__label">
+                <label for="">部署名</label>
+              </div>
+              <div class="form__input">
+                <input type="text" placeholder="営業部">
+              </div>
+            </div>
+            <div class="form__item">
+              <div class="form__label">
+                <label for="">ご担当者名<span class="required-badge">*</span></label>
+              </div>
+              <div class="form__input">
+                <input type="text" placeholder="山田 太郎" required>
+              </div>
+            </div>
+            <div class="form__item">
+              <div class="form__label">
+                <label for="">ご担当者名（フリガナ）<span class="required-badge">*</span></label>
+              </div>
+              <div class="form__input">
+                <input type="text" placeholder="ヤマダ タロウ" required>
+              </div>
+            </div>
+            <div class="form__item">
+              <div class="form__label">
+                <label for="email">メールアドレス<span class="required-badge">*</span></label>
+              </div>
+              <div class="form__input">
+                <input type="email" placeholder="example@company.co.jp" required>
+              </div>
+            </div>
+            <div class="form__item">
+              <div class="form__label">
+                <label for="">ご住所<span class="required-badge">*</span></label>
+              </div>
+              <div class="form__input">
+                <input type="text" placeholder="〒000-0000 都道府県市区町村番地 建物名・部屋番号" required>
+              </div>
+            </div>
+            <div class="form__item">
+              <div class="form__label">
+                <label for="">電話番号<span class="required-badge">*</span></label>
+              </div>
+              <div class="form__input">
+                <input type="tel" placeholder="03-1234-5678" required>
+              </div>
+            </div>
+            <div class="form__item">
+              <div class="form__label">
+                <label for="">お問い合わせ種別</label>
+              </div>
+              <div class="form__input">
+                <input type="text" placeholder="株式会社〇〇">
+              </div>
+            </div>
+            <div class="form__item">
+            <div class="form__label">
+              <label for="">お問い合わせ内容</label>
+            </div>
+            <div class="form__input">
+              <textarea rows="10" placeholder="お問い合わせ内容をご記入ください。お見積りの場合は、希望数量や納期などもお知らせください。"></textarea>
+            </div>
+            </div>
+            <p><a href="" class="form__link">プライバシーポリシー</a>に同意します<span class="required-badge">*</span></p>
+            <button type="submit" class="btn btn--dark form__btn">送信する</button>
+          </div>
+          <p class="form__bottom">お問い合わせいただいた内容は、2営業日以内にご返信いたします。<br>お急ぎの場合は、お電話にてお問い合わせください。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact" aria-labelledby="cta-title">
+      <div class="cta__bk" aria-hidden="true">
+        <img src="./img/cta-bk.svg" alt="" />
+      </div>
+
+      <div class="container cta__grid">
+        <div class="cta__left">
+          <h2 id="cta-title">まずはお気軽にご相談ください</h2>
+          <p>
+            小ロット対応、デザインから製造まで一貫サポート。<br />
+            お見積りは無料です。カタログダウンロードもご用意しています。
+          </p>
+          <div class="cta__btnrow">
+            <a class="btn btn--light" href="#contact">
+              <span>お問い合わせ・見積依頼</span>
+              <img class="btn__icon" src="./img/icon-black-arrow.png"
+                alt="" aria-hidden="true" />
+            </a>
+            <a class="btn btn--dark" href="./download/2026catalog.pdf" target="_blank" rel="noopener">
+    <span>カタログダウンロード</span>
+    <img class="btn__icon" src="./img/icon-white-arrow.png" alt="" aria-hidden="true">
+</a>
+          </div>
+        </div>
+
+        <aside class="cta__right" aria-label="公式ストア">
+          <p>公式ストアから安心してお買い求めいただけます</p>
+          <div>
+            <a class="store-btn store-btn--base" href="#contact">
+              <span>安心のBASE公式ストア</span>
+              <span class="store-btn__badge" aria-hidden="true">
+                <img src="./img/base.png" alt="" />
+              </span>
+            </a>
+          </div>
+          <div>
+            <a class="store-btn store-btn--yahoo" href="#contact">
+              <span>Yahoo!ショッピングでお得に</span>
+              <span class="store-btn__badge store-btn__badge--square" aria-hidden="true">
+                <img src="./img/yahoo.png" alt="" />
+              </span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="フッター">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="https://www.figma.com/api/mcp/asset/3b221c58-a19f-4a23-bfb8-c35076b2df17" alt="nagakura" />
+          <p>缶×植物の、育つノベルティ。<br />小ロット対応・一貫サポート。</p>
+        </div>
+
+        <div class="footer__cols">
+          <nav class="footer__col" aria-label="サービス">
+            <h3>サービス</h3>
+            <ul class="footer__links">
+             <li><a href="collection.html">缶屋さんのオリジナル缶コレクション</a></li>
+              <li><a href="fan-goods.html">缶屋さんの押し活グッズ</a></li>
+              <li><a href="green.html">缶屋さんの花と緑のノベルティ</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer__col" aria-label="企業情報">
+            <h3>企業情報</h3>
+            <ul class="footer__links">
+              <li><a href="#about">会社案内</a></li>
+              <li><a href="#topics">トピックス</a></li>
+              <li><a href="#contact">カタログダウンロード</a></li>
+            </ul>
+          </nav>
+          <div class="footer__sns" aria-label="SNS">
+            <a href="#contact" aria-label="Instagram">
+              <img src="./img/instagram.png" alt="" />
+            </a>
+            <a href="#contact" aria-label="Facebook">
+              <img src="./img/facebook.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">© 2026 Nagakura co.,ltd All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+
+</html>

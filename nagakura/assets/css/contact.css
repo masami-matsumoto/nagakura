@@ -1,0 +1,147 @@
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    --threshold: 30rem;
+    margin-top: 40px;
+}
+
+.contact-cards>* {
+    flex-grow: 1;
+    flex-basis: calc(var(--threshold) - 100%) * 9999;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 3px solid var(--brand);
+    border-radius: 1rem;
+    position: relative;
+}
+
+.contact-card__badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+}
+
+.contact-card__text {
+    flex-basis: 90%;
+}
+
+.contact-card__text>* {
+    margin: 0;
+}
+
+.contact-card__text a {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--brand);
+}
+
+.contact-card__text a::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+@media (any-hover: hover) {
+    .contact-card._tel:hover {
+        background: rgba(166, 211, 154, 0.4);
+    }
+
+    .contact-card._email:hover {
+        background: rgba(246, 192, 206, 0.4);
+    }
+}
+
+/* Form */
+.form {
+    margin-top: 40px;
+}
+
+.form__inner {
+    max-width: 100%;
+    width: 830px;
+    padding: 20px;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.10), 0 8px 10px -6px rgba(0, 0, 0, 0.10);
+    margin: 40px auto 0;
+}
+
+.required-text {
+    margin: 0;
+}
+
+.required-badge {
+    color: red;
+}
+
+.form__item {
+    margin-bottom: 20px;
+}
+
+.form__label {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.form__label label {
+    vertical-align: middle;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 14px;
+    border: 1px solid #D1D5DC;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid #D1D5DC;
+}
+
+.form__link {
+    color: red;
+    text-decoration: underline;
+}
+
+.form__btn {
+    width: 100%;
+}
+
+.form__bottom {
+    margin: 40px auto 0;
+    width: max-content;
+    max-width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contact-cards {
+        margin-top: 80px;
+    }
+
+    .form {
+        margin-top: 80px;
+    }
+
+    .form__inner {
+        padding: 40px;
+    }
+
+    .form__bottom {
+        margin: 80px auto 0;
+    }
+}
